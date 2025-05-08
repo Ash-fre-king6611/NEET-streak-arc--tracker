@@ -72,6 +72,38 @@
       margin-bottom: 15px;
     }
 
+    .syllabus {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .subject {
+      margin-bottom: 20px;
+    }
+
+    .subject h4 {
+      margin-bottom: 10px;
+    }
+
+    .subject input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .progress-bar {
+      height: 20px;
+      background-color: #444;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .progress-bar span {
+      display: block;
+      height: 100%;
+      border-radius: 5px;
+      background-color: #4caf50;
+    }
+
     .floating-btn {
       position: fixed;
       bottom: 20px;
@@ -127,7 +159,25 @@
   <div class="dashboard">
     <div class="panel">
       <h3>Syllabus Progress</h3>
-      <p>Track your 11th and 12th class syllabus here...</p>
+      <div class="syllabus">
+        <!-- 11th Syllabus -->
+        <div class="subject">
+          <h4>11th Class Syllabus</h4>
+          <input type="checkbox" id="chem11" /> <label for="chem11">Chemistry</label><br />
+          <input type="checkbox" id="phy11" /> <label for="phy11">Physics</label><br />
+          <input type="checkbox" id="bio11" /> <label for="bio11">Biology</label><br />
+          <div class="progress-bar"><span style="width: 30%"></span></div>
+        </div>
+
+        <!-- 12th Syllabus -->
+        <div class="subject">
+          <h4>12th Class Syllabus</h4>
+          <input type="checkbox" id="chem12" /> <label for="chem12">Chemistry</label><br />
+          <input type="checkbox" id="phy12" /> <label for="phy12">Physics</label><br />
+          <input type="checkbox" id="bio12" /> <label for="bio12">Biology</label><br />
+          <div class="progress-bar"><span style="width: 40%"></span></div>
+        </div>
+      </div>
     </div>
     <div class="panel">
       <h3>Motivation Panel</h3>
@@ -152,4 +202,3 @@
   </script>
 </body>
   </html>
-
